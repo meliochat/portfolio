@@ -11,7 +11,19 @@
     <div class="background-container">
         <img src="img/fondo_indie.png" alt="Cozy room with Wilson and Leo">
     </div> 
-    <div class="overlay"></div>     
+    <div class="overlay"></div>
+    <header class="header">
+      <div class="logo">Melina</div>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About Me</a>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+    </header>       
     <nav class="menu">
         <ul>
           <li><a href="#hero">Home</a></li>
@@ -110,6 +122,13 @@
         particle.style.height = 'auto'; 
         particlesContainer.appendChild(particle);
     }
+    });
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+
+    menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
     });
     </script>
 </body>
