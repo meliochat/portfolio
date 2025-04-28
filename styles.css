@@ -32,6 +32,7 @@ body {
 }
 
 /* HEADER GENERAL */
+/* GENERAL HEADER */
 .header {
     width: 100%;
     height: 60px;
@@ -53,19 +54,20 @@ body {
     font-size: 16px;
   }
   
-  /* NAVEGACION */
+  /* NAV */
   .nav {
     display: flex;
     gap: 20px;
   }
   
+  /* NAV LINKS */
   .nav a {
     color: white;
     text-decoration: none;
     font-size: 16px;
   }
   
-  /* BOTON MENU HAMBURGUESA */
+  /* HAMBURGUESA OCULTA EN PC */
   .menu-toggle {
     display: none;
     font-size: 28px;
@@ -73,8 +75,26 @@ body {
     cursor: pointer;
   }
   
-  /* RESPONSIVE */
+  /* MOBILE */
   @media (max-width: 768px) {
+    nav a { 
+        font-size: 16px;
+    }
+    
+    h1, h2, h3 { 
+        font-size: 24px;
+    }
+    
+    .tech-stack-icons img { 
+        width: 50px;
+        height: 50px;
+    }
+    
+    .about-me-text { 
+        font-size: 14px;
+        padding: 10px;
+    }
+
     .nav {
       position: absolute;
       top: 60px;
@@ -93,7 +113,8 @@ body {
     .menu-toggle {
       display: block;
     }
-  }  
+  }
+   
 
 /* --- Hero Section --- */
 .hero {
@@ -300,26 +321,6 @@ body {
     box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 
-
-@media (max-width: 768px) {
-    nav a { 
-        font-size: 16px;
-    }
-
-    h1, h2, h3 { 
-        font-size: 24px;
-    }
-
-    .tech-stack-icons img { 
-        width: 50px;
-        height: 50px;
-    }
-
-    .about-me-text { 
-        font-size: 14px;
-        padding: 10px;
-    }
-}
 
 .about-image {
     max-width: 300px;
