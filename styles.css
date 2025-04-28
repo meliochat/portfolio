@@ -56,11 +56,10 @@ body {
     z-index: 1000;
 }
 
-.logo {
-    font-family: 'Press Start 2P', cursive;
-    color: white;
-    font-size: 16px;
+#hero, #projects, #skills, #about {
+    padding-top: 80px;
 }
+
 
 .nav {
     display: flex;
